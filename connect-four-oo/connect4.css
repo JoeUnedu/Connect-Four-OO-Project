@@ -1,0 +1,170 @@
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+body {
+  background-color: black;
+}
+
+label {
+  background-color: white;
+}
+
+/* div.option*/
+div.option {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+/* button, button:hover, button.center*/
+
+button {
+  font-weight: bold;
+  margin-right: 10px;
+  position: relative;
+  left: 313px;
+  top: 20px;
+}
+
+button:hover {
+  box-shadow: 0 4px 6px 0 hsl(120, 100%, 25%), 0 8px 30px 0 hsl(60, 100%, 50%);
+}
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.play1 {
+  background-color: green;
+}
+
+.piece.play2 {
+  background-color: firebrick;
+}
+
+.playerBall {
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 5px auto 0;
+  border-radius: 50%;
+}
+
+.play1 {
+  background: radial-gradient(
+    circle at 65% 15%,
+    white 1px,
+    greenyellow 3%,
+    darkgreen 70%,
+    green 100%
+  );
+}
+
+.g0 {
+  position: relative;
+  animation-name: drop0;
+  animation-duration: 0.13s;
+}
+
+@keyframes drop0 {
+  from {
+    top: -45px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.g1 {
+  position: relative;
+  animation-name: drop0to1;
+  animation-duration: 0.26s;
+}
+
+@keyframes drop0to1 {
+  from {
+    top: -126px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.g2 {
+  position: relative;
+  animation-name: drop0to2;
+  animation-duration: 0.39s;
+}
+
+@keyframes drop0to2 {
+  from {
+    top: -207px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.g3 {
+  position: relative;
+  animation-name: drop0to3;
+  animation-duration: 0.52s;
+}
+
+@keyframes drop0to3 {
+  from {
+    top: -288px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.g4 {
+  position: relative;
+  animation-name: drop0to4;
+  animation-duration: 0.65s;
+}
+
+@keyframes drop0to4 {
+  from {
+    top: -369px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.g5 {
+  position: relative;
+  animation-name: drop0to5;
+  animation-duration: 0.78s;
+}
+
+@keyframes drop0to5 {
+  from {
+    top: -450px;
+  }
+  to {
+    top: 0px;
+  }
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <button id="start-game">Start Game</button>
+
+  </div>
+  <div id="container">
+    <label for="colx">SelectColor1:</label>
+    <select id="colx" name="colx">
+      <option value="red">red</option>
+      <option value="yellow">yellow</option>
+      <option value="purple">purple</option>
+      
+    </select>
+    <label for="coly">SelectColor2:</label>
+    <select id="coly" name="coly">
+      <option value="green">green</option>
+      <option value="orange">orange</option>
+      <option value="blue">blue</option>
+   
+    </select>
+  </div>
+  
+  <div id="game">
+    <table id="board"></table>
+  </div>
+ 
+  <script src="connect4.js"></script>
+
+</body>
+
+</html>
